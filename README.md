@@ -38,5 +38,6 @@ I will share my learning process of 10X and Smart-seq2 to fans of **Bioinfoplane
 
 ### Papers
 
-- [Single-cell RNA-sequencing: The future of genome biology is now](https://github.com/reedliu/scRNA-codes/scRNA-papers/2017-Single-cell-RNA-sequencing-The-future-of-genome-biology-is-now.pdf), 2017 RNA Biol. [**Recommend**] 综述
+- [Single-cell RNA-sequencing: The future of genome biology is now](https://github.com/reedliu/scRNA-codes/blob/master/scRNA-papers/2017-Single-cell-RNA-sequencing-The-future-of-genome-biology-is-now.pdf), 2017 RNA Biol. [**Recommend**] 综述
 - 
+
