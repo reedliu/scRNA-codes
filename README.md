@@ -8,13 +8,17 @@ I will share my learning process of 10X and Smart-seq2 to fans of **Bioinfoplane
 
 #### tutorials
 
-[Getting started with Cell Ranger](https://davetang.org/muse/2018/08/09/getting-started-with-cell-ranger/) by Dave TANG
+- [Getting started with Cell Ranger](https://davetang.org/muse/2018/08/09/getting-started-with-cell-ranger/) by Dave TANG
 
-[scRNASeqPipeline](https://github.com/tallulandrews/scRNASeqPipeline) by tallulandrews
+- [scRNASeqPipeline](https://github.com/tallulandrews/scRNASeqPipeline) by tallulandrews
 
-[A workflow for single cell RNA-seq data analysis](http://research.fhcrc.org/content/dam/stripe/sun/software/scRNAseq/scRNAseq.html) by Wei Sun
+- [A workflow for single cell RNA-seq data analysis](http://research.fhcrc.org/content/dam/stripe/sun/software/scRNAseq/scRNAseq.html) by Wei Sun
 
-[singleCellSeq](https://github.com/jdblischak/singleCellSeq) 
+- [singleCellSeq](https://github.com/jdblischak/singleCellSeq) 
+
+#### scRNA tools
+
+- [software packages of awesome-single-cell by Sean Davis](https://github.com/seandavi/awesome-single-cell) 
 
 #### scRNA experimental design
 
@@ -34,5 +38,5 @@ I will share my learning process of 10X and Smart-seq2 to fans of **Bioinfoplane
 
 ### Papers
 
-- [a collection of single RNA-seq tools by Sean Davis](https://github.com/seandavi/awesome-single-cell) 
+- [Single-cell RNA-sequencing: The future of genome biology is now](https://github.com/reedliu/scRNA-codes/scRNA-papers/2017-Single-cell-RNA-sequencing-The-future-of-genome-biology-is-now.pdf), 2017 RNA Biol. [**Recommend**] 综述
 - 
