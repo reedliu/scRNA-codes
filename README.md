@@ -14,7 +14,8 @@ I will share my learning process of 10X and Smart-seq2 to fans of **Bioinfoplane
 
 - [A workflow for single cell RNA-seq data analysis](http://research.fhcrc.org/content/dam/stripe/sun/software/scRNAseq/scRNAseq.html) by Wei Sun
 
-- [singleCellSeq](https://github.com/jdblischak/singleCellSeq) 
+- [singleCellSeq](https://github.com/jdblischak/singleCellSeq) on GitHub
+- [ECCB 2018 Single Cell Tutorial](https://github.com/fmicompbio/SIB_scRNA-seq_Tutorial_2018) of SIB course teaching
 
 #### scRNA tools
 
