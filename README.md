@@ -1,10 +1,11 @@
 # scRNA-codes
 
+> Author: Reed Liu
 > This is my first single cell practice.
 
 I will share my learning process of 10X and Smart-seq2 to fans of **Bioinfoplanet(公众号：生信星球)**.
 
-### Great Readings
+### Nice Readings
 
 #### tutorials
 
@@ -22,6 +23,10 @@ I will share my learning process of 10X and Smart-seq2 to fans of **Bioinfoplane
 - [software packages of awesome-single-cell by Sean Davis](https://github.com/seandavi/awesome-single-cell) 
 
 #### scRNA experimental design
+
+
+
+#### scRNA QC
 
 
 
