@@ -1,4 +1,4 @@
-# scRNA-codes
+# scRNA-codes Materials
 
 > Author: Reed Liu
 > This is my first single cell practice.
@@ -6,9 +6,9 @@
 
 I will share my learning process of 10X and Smart-seq2 to fans of **Bioinfoplanet(公众号：生信星球)**.
 
-### Nice Readings
+### Nice Readings_推荐阅读
 
-#### tutorials
+#### tutorials_网络教程
 
 - [Getting started with Cell Ranger](https://davetang.org/muse/2018/08/09/getting-started-with-cell-ranger/) by Dave TANG
 
@@ -19,32 +19,37 @@ I will share my learning process of 10X and Smart-seq2 to fans of **Bioinfoplane
 - [singleCellSeq](https://github.com/jdblischak/singleCellSeq) on GitHub
 - [ECCB 2018 Single Cell Tutorial](https://github.com/fmicompbio/SIB_scRNA-seq_Tutorial_2018) of SIB course teaching
 
-#### scRNA tools
+#### scRNA tools_工具相关
 
 - [software packages of awesome-single-cell by Sean Davis](https://github.com/seandavi/awesome-single-cell) 
 
-#### scRNA experimental design
+#### scRNA experimental design_实验设计
 
 
 
-#### scRNA QC
+#### scRNA QC_质控
 
 [2016_Classification_of_low_quality_cells_from_single-cell_RNA-seq_data.pdf](https://github.com/reedliu/scRNA-codes/blob/master/scRNA-papers/2016_Classification_of_low_quality_cells_from_single-cell_RNA-seq_data.pdf) 
 
-#### single cell RNA-seq normalization
+#### scRNA-seq normalization_标准化
 
 
 
-#### single cell RNA-seq clusering
+#### scRNA-seq clusering_聚类算法
 
 
 
-#### single cell batch effect
+#### scRNA batch effect_批次效应处理
 
 
 
-### Papers
+### Papers_推荐文献
 
 - [Single-cell RNA-sequencing: The future of genome biology is now](https://github.com/reedliu/scRNA-codes/blob/master/scRNA-papers/2017-Single-cell-RNA-sequencing-The-future-of-genome-biology-is-now.pdf), 2017 RNA Biol. [**Recommend**] 综述
 - 
 
+### My Understanding_个人整理
+
+#### Review_综述
+
+- 单细胞转录组分析综述：[2017-Identifying_cell_populations_with_scRNASeq.pdf](https://github.com/reedliu/scRNA-codes/blob/master/scRNA-papers/2017-Identifying_cell_populations_with_scRNASeq.pdf) 
