@@ -2,6 +2,7 @@
 
 > Author: Reed Liu
 > This is my first single cell practice.
+> **All the PDFs can be directedly read!**
 
 I will share my learning process of 10X and Smart-seq2 to fans of **Bioinfoplanet(公众号：生信星球)**.
 
