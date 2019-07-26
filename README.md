@@ -52,4 +52,4 @@ I will share my learning process of 10X and Smart-seq2 to fans of **Bioinfoplane
 
 #### Review_综述
 
-- 单细胞转录组分析综述：[2017-Identifying_cell_populations_with_scRNASeq.pdf](https://github.com/reedliu/scRNA-codes/blob/master/scRNA-papers/2017-Identifying_cell_populations_with_scRNASeq.pdf) 
+- [单细胞转录组分析综述](https://github.com/reedliu/scRNA-codes/blob/master/my_understanding/%E5%8D%95%E7%BB%86%E8%83%9E%E8%BD%AC%E5%BD%95%E7%BB%84%E9%89%B4%E5%AE%9A%E7%BB%86%E8%83%9E%E7%BE%A4%E4%BD%93.md)：[2017-Identifying_cell_populations_with_scRNASeq.pdf](https://github.com/reedliu/scRNA-codes/blob/master/scRNA-papers/2017-Identifying_cell_populations_with_scRNASeq.pdf) 
