@@ -28,7 +28,7 @@ I will share my learning process of 10X and Smart-seq2 to fans of **Bioinfoplane
 
 #### scRNA QC
 
-
+[2016_Classification_of_low_quality_cells_from_single-cell_RNA-seq_data.pdf](https://github.com/reedliu/scRNA-codes/blob/master/scRNA-papers/2016_Classification_of_low_quality_cells_from_single-cell_RNA-seq_data.pdf) 
 
 #### single cell RNA-seq normalization
 
