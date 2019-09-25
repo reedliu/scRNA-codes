@@ -15,20 +15,13 @@ I will share my learning process of 10X and Smart-seq2 to fans of **Bioinfoplane
 #### Scripts_常用脚本
 
 - [cellranger count操作](https://github.com/reedliu/scRNA-codes/tree/master/cellranger) 
-
 - [校正批次效应](https://github.com/reedliu/scRNA-codes/blob/master/19.6.23-scRNA-batch-effect/three-scRNA-batch.R)
-
 - [seurat V3操作（以PBMC 2700为例）](https://github.com/reedliu/scRNA-codes/blob/master/2019-07-scRNA-PBMC2700/seurat-v3-pbmc3k.R) 
-
 - [seurat组合10X数据](https://github.com/reedliu/scRNA-codes/blob/master/seurat-combine-two-10X-runs.R) 
-
 - [monocle2使用](https://github.com/reedliu/scRNA-codes/blob/master/monocle2_use_scRNA_pkg.R)
-
 - [monocle3使用](https://github.com/reedliu/scRNA-codes/blob/master/monocle3-learn.R) 
-
 - [用几个R包寻找HVGs](https://github.com/reedliu/scRNA-codes/blob/master/scRNA-HVGs-testing.R)
-
-  
+- [Bioconductor-scRNA之基础操作 ](https://github.com/reedliu/scRNA-codes/blob/master/bioconductor-scRNA-basic/part2_read_count_data.R) 
 
 ### Nice Readings_推荐阅读
 
