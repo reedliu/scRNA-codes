@@ -22,6 +22,7 @@ I will share my learning process of 10X and Smart-seq2 to fans of **Bioinfoplane
 - [monocle3使用](https://github.com/reedliu/scRNA-codes/blob/master/monocle3-learn.R) 
 - [用几个R包寻找HVGs](https://github.com/reedliu/scRNA-codes/blob/master/scRNA-HVGs-testing.R)
 - [Bioconductor-scRNA之基础操作 ](https://github.com/reedliu/scRNA-codes/blob/master/bioconductor-scRNA-basic/part2_read_count_data.R) 
+- [mouce_c1下游分析全套](https://github.com/reedliu/scRNA-codes/tree/master/2019-10-23-mouse_c1_downstream) 
 
 ### Nice Readings_推荐阅读
 
