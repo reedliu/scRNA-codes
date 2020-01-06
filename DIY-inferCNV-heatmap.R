@@ -176,3 +176,157 @@ draw(ht_normal %v% ht_tumor)
 dev.off()
 
 
+## Step3-4: 画图=》第四次尝试【为细胞添加meta信息】
+# 首先加载细胞注释信息
+load('meta.Rdata')
+head(meta)
+# V3  V4   V14 newname
+# 1  SC1_01 MTa Tumor   SC1-1
+# 10 SC1_10 MTa Tumor  SC1-10
+# 11 SC1_11 MTa Tumor  SC1-11
+# 12 SC1_12 MTa Tumor  SC1-12
+# 13 SC1_13 MTa Tumor  SC1-13
+# 14 SC1_14 MTa Tumor  SC1-14
+
+# 还是先对tumor处理
+n <- t(tumor_expr[,-ncol(tumor_expr)])
+dim(n);dim(meta)
+tmp <- meta[meta$newname%in%rownames(n),]
+identical(rownames(n),tmp$newname) # TRUE
+
+# Set annotation
+# https://www.biostars.org/p/317349/
+ann <- data.frame(tmp$V4, tmp$V14)
+table(tmp$V4);rainbow(8)
+table(tmp$V14)
+
+colnames(ann) <- c("Type", "Type2")
+colours <- list("Type"=c("MTa"="#FF0000FF","MTb"="#FFBF00FF","PCLb"="#80FF00FF",
+                         "PMLa"="#00FF40FF","PMLb"="#00FFFFFF",
+                         "VCLb"="#0040FFFF","VMLa"="#8000FFFF",
+                         "VMLb"="#FF00BFFF"),
+                "Type2"=c("Lum"="limegreen","Tumor"="gold"))
+colAnn <- HeatmapAnnotation(df=ann, which="row", col=colours, annotation_width=unit(c(1, 4), "cm"), gap=unit(1, "mm"))
+
+
+pdf("test4-heatmap.pdf",width = 15,height = 10)
+ht_tumor = Heatmap(as.matrix(n),
+                   cluster_rows = T,
+                   cluster_columns = F,
+                   show_column_names = F,
+                   show_row_names = F,
+                   column_split = new_cluster,
+                   heatmap_legend_param = list(
+                     title = "Modified Expression",
+                     title_position = "leftcenter-rot", # 图例标题位置
+                     at=c(0.4,1.6), #图例范围
+                     legend_height = unit(3, "cm") #图例长度
+                   ),
+                   top_annotation = top_color,
+                   row_title = "Observations (Cells)",
+                   row_title_side = c("right"),
+                   column_title = "Genomic Region",
+                   column_title_side = c("bottom"),
+                   left_annotation=colAnn)
+draw(ht_tumor, heatmap_legend_side = "left") # 图例位置
+
+dev.off()
+
+
+
+## Step3-5: 画图=》第四次尝试【为细胞添加meta信息】
+# 首先加载细胞注释信息
+load('meta.Rdata')
+head(meta)
+# V3  V4   V14 newname
+# 1  SC1_01 MTa Tumor   SC1-1
+# 10 SC1_10 MTa Tumor  SC1-10
+# 11 SC1_11 MTa Tumor  SC1-11
+# 12 SC1_12 MTa Tumor  SC1-12
+# 13 SC1_13 MTa Tumor  SC1-13
+# 14 SC1_14 MTa Tumor  SC1-14
+
+# 还是先对tumor处理
+n <- t(tumor_expr[,-ncol(tumor_expr)])
+dim(n);dim(meta)
+tmp <- meta[meta$newname%in%rownames(n),]
+identical(rownames(n),tmp$newname) # TRUE
+
+# Set annotation
+# https://www.biostars.org/p/317349/
+ann <- data.frame(tmp$V4, tmp$V14)
+table(tmp$V4);rainbow(8)
+table(tmp$V14)
+
+colnames(ann) <- c("Type", "Type2")
+colours <- list("Type"=c("MTa"="#FF0000FF","MTb"="#FFBF00FF","PCLb"="#80FF00FF",
+                         "PMLa"="#00FF40FF","PMLb"="#00FFFFFF",
+                         "VCLb"="#0040FFFF","VMLa"="#8000FFFF",
+                         "VMLb"="#FF00BFFF"),
+                "Type2"=c("Lum"="limegreen","Tumor"="gold"))
+colAnn <- HeatmapAnnotation(df=ann, which="row", col=colours, annotation_width=unit(c(1, 4), "cm"), gap=unit(1, "mm"))
+
+# 再对normal处理
+m <- t(norm_expr[,-ncol(norm_expr)])
+dim(m);dim(meta)
+tmp2 <- meta[meta$newname%in%rownames(m),]
+identical(rownames(m),tmp2$newname) # TRUE
+
+ann <- data.frame(tmp$V4, tmp$V14)
+table(tmp$V4);rainbow(8)
+table(tmp$V14)
+
+ann2 <- data.frame(tmp2$V4, tmp2$V14)
+table(tmp2$V4);rainbow(4)
+table(tmp2$V14)
+
+colnames(ann2) <- c("Type", "Type2")
+colours2 <- list("Type"=c("PWB"="#FF0000FF","PWL"="#FFBF00FF","VWB"="#80FF00FF",
+                         "VWL"="#00FF40FF"),
+                "Type2"=c("Bas"="limegreen","Lum"="gold"))
+colAnn2 <- HeatmapAnnotation(df=ann2, which="row", col=colours2, annotation_width=unit(c(1, 4), "cm"), gap=unit(1, "mm"))
+
+# 开始画图
+pdf("test5-heatmap.pdf",width = 30,height = 30)
+ht_normal = Heatmap(as.matrix(m),
+                    cluster_rows = T,
+                    cluster_columns = F,
+                    show_column_names = F,
+                    show_row_names = F,
+                    column_split = new_cluster,
+                    row_title = "References (Cells)",
+                    row_title_side = c("right"),
+                    row_title_rot = 90,
+                    row_title_gp = gpar(fontsize = 25),
+                    column_title = NULL, 
+                    heatmap_legend_param = list(
+                      title = "Modified Expression",
+                      title_position = "leftcenter-rot", # 图例标题位置
+                      title_gp = gpar(fontsize = 20),# 图例标题大小
+                      at=c(0.4,1.6), #图例范围
+                      legend_height = unit(6, "cm")),#图例长度
+                    width = 20, height = 5,
+                    left_annotation=colAnn2) 
+
+ht_tumor = Heatmap(as.matrix(n),
+                   cluster_rows = T,
+                   cluster_columns = F,
+                   show_column_names = F,
+                   show_row_names = F,
+                   column_split = new_cluster,
+                   show_heatmap_legend=F,
+                   top_annotation = top_color,
+                   row_title = "Observations (Cells)",
+                   row_title_side = c("right"),
+                   row_title_rot = 90,
+                   row_title_gp = gpar(fontsize = 25),
+                   column_title = "Genomic Region",
+                   column_title_side = c("bottom"),
+                   column_title_gp = gpar(fontsize = 25),
+                   width = 20, height = 10,
+                   heatmap_height = 15,
+                   left_annotation=colAnn)
+
+# 设置图例位置，并竖直排列
+draw(ht_normal %v% ht_tumor)
+dev.off()
