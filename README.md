@@ -24,7 +24,7 @@ I will share my learning process of 10X and Smart-seq2 to fans of **Bioinfoplane
 - [Bioconductor-scRNA之基础操作 ](https://github.com/reedliu/scRNA-codes/blob/master/bioconductor-scRNA-basic/part2_read_count_data.R) 
 - [mouce_c1下游分析全套](https://github.com/reedliu/scRNA-codes/tree/master/2019-10-23-mouse_c1_downstream) 
 - [改造Seurat的DoHeatmap函数](https://github.com/reedliu/scRNA-codes/blob/master/change_Seurat_DoHeatmap.R) 【配套说明：[如何改造Seurat包的DoHeatmap函数？](https://www.jieandze1314.com/post/cnposts/change-doheatmap/)】
-- [改造inferCNV的热图](https://github.com/reedliu/scRNA-codes/tree/master/2020-1-9-inferCNV-heatmap)【配套说明：[如何改造inferCNV的热图？](https://www.jieandze1314.com/post/cnposts/diy-infercnv-heatmap/)】 
+- [改造inferCNV的热图](https://github.com/reedliu/scRNA-codes/tree/master/2020-1-9-inferCNV-heatmap)【配套说明：[如何改造inferCNV的热图？](https://www.jieandze1314.com/post/cnposts/diy-infercnv-heatmap/)，[来吧，自定义你的热图](https://www.jieandze1314.com/post/cnposts/diy-infercnv-heatmap-2/)】 
 
 ### Nice Readings_推荐阅读
 
